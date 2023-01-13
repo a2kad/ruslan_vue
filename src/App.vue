@@ -1,31 +1,35 @@
 <template>
-  <img alt="CV - My Photo" src="./assets/avatar.jpg">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div class="block">
+	<div class="list">
+		<div class="left__column">
+			left
+		</div>
+		<div class="right__column">right</div>
+	</div>
+  </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
 
-export default {
-  name: 'App',
-  components: {
-    HelloWorld
-  }
-}
 </script>
 
 <style>
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;600&display=swap');
 #app {
 	font-family: 'Montserrat', sans-serif;
-	font-weight: 300;
-	background-color: #999;
-	text-align: center;
-	color: #2e2e2e;
-	margin-top: 60px;
+	margin: 0;
+	padding: 0;
 }
-img  {
-	max-width: 30%;
-	height: auto;
+
+div .block{
+	display: flex;
+	
+	justify-content: center;
 }
+div .list{
+	border: 1px solid rgb(224, 224, 224);
+	width: 90%;
+	box-shadow: -6px 6px 10px 1px rgba(51,51,51,0.5);
+}
+
 </style>
